@@ -12,13 +12,22 @@ class BruteView: UIView {
     // MARK: - Outlets
     
     private lazy var textField: UITextField = {
-            let textField = UITextField()
-            textField.backgroundColor = .white
-            textField.placeholder = "password"
-            textField.textAlignment = .center
-            textField.layer.cornerRadius = 20
-            textField.text = ""
-            return textField
+        let textField = UITextField()
+        textField.backgroundColor = .white
+        textField.placeholder = "password"
+        textField.textAlignment = .center
+        textField.layer.cornerRadius = 20
+        textField.text = ""
+        return textField
+    }()
+    
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.text = "Угадать пароль?"
+        label.textColor = .darkGray
+        label.font = .boldSystemFont(ofSize: 30)
+        
+        return label
         }()
     
     // MARK: - Initial
