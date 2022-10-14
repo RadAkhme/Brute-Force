@@ -56,15 +56,71 @@
 		935F5E9C28F9C89B00747242 /* Brute Force */ = {
 			isa = PBXGroup;
 			children = (
-				935F5E9D28F9C89B00747242 /* AppDelegate.swift */,
-				935F5E9F28F9C89B00747242 /* SceneDelegate.swift */,
-				935F5EA128F9C89B00747242 /* ViewController.swift */,
-				935F5EA328F9C89B00747242 /* Main.storyboard */,
-				935F5EA628F9C8A100747242 /* Assets.xcassets */,
+				935F5EB228F9CC7F00747242 /* Resources */,
+				935F5EB128F9CC7700747242 /* Sources */,
 				935F5EA828F9C8A100747242 /* LaunchScreen.storyboard */,
-				935F5EAB28F9C8A100747242 /* Info.plist */,
+				935F5EA328F9C89B00747242 /* Main.storyboard */,
 			);
 			path = "Brute Force";
+			sourceTree = "<group>";
+		};
+		935F5EB128F9CC7700747242 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EB728F9CCB200747242 /* Brute */,
+				935F5EB628F9CCAA00747242 /* View */,
+				935F5EB528F9CC9E00747242 /* Controller */,
+				935F5EB428F9CC9600747242 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		935F5EB228F9CC7F00747242 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EA628F9C8A100747242 /* Assets.xcassets */,
+				935F5EB328F9CC8800747242 /* Configurations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		935F5EB328F9CC8800747242 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EAB28F9C8A100747242 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		935F5EB428F9CC9600747242 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				935F5E9F28F9C89B00747242 /* SceneDelegate.swift */,
+				935F5E9D28F9C89B00747242 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		935F5EB528F9CC9E00747242 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		935F5EB628F9CCAA00747242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EA128F9C89B00747242 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935F5EB728F9CCB200747242 /* Brute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Brute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
