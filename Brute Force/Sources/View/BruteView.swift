@@ -30,6 +30,36 @@ class BruteView: UIView {
         return label
         }()
     
+    private lazy var passwordButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Create password", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.backgroundColor = .systemGreen
+        button.layer.cornerRadius = 20
+        button.addTarget(self, action: #selector(passwordButtonPressed), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    private lazy var button: UIButton = {
+        let button = UIButton()
+        button.setTitle("Press me!", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.backgroundColor = .systemRed
+        button.layer.cornerRadius = 20
+        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    @objc private func buttonPressed() {
+        
+    }
+    
+    @objc private func passwordButtonPressed() {
+        
+    }
+    
     // MARK: - Initial
     
     override init(frame: CGRect) {
