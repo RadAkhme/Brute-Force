@@ -15,6 +15,7 @@
 		935F5EAA28F9C8A100747242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F5EA828F9C8A100747242 /* LaunchScreen.storyboard */; };
 		935F5EB928F9CFDC00747242 /* BruteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EB828F9CFDC00747242 /* BruteView.swift */; };
 		935F5EBC28F9D90300747242 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 935F5EBB28F9D90300747242 /* SnapKit */; };
+		935F5EBF28F9DAB300747242 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EBE28F9DAB300747242 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		935F5EA928F9C8A100747242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F5EAB28F9C8A100747242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F5EB828F9CFDC00747242 /* BruteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteView.swift; sourceTree = "<group>"; };
+		935F5EBE28F9DAB300747242 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		935F5EB128F9CC7700747242 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				935F5EBD28F9DA9C00747242 /* Extension */,
 				935F5EB728F9CCB200747242 /* Brute */,
 				935F5EB628F9CCAA00747242 /* View */,
 				935F5EB528F9CC9E00747242 /* Controller */,
@@ -126,6 +129,14 @@
 			children = (
 			);
 			path = Brute;
+			sourceTree = "<group>";
+		};
+		935F5EBD28F9DA9C00747242 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EBE28F9DAB300747242 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F5EBF28F9DAB300747242 /* Extension.swift in Sources */,
 				935F5EA228F9C89B00747242 /* BruteController.swift in Sources */,
 				935F5E9E28F9C89B00747242 /* AppDelegate.swift in Sources */,
 				935F5EA028F9C89B00747242 /* SceneDelegate.swift in Sources */,
