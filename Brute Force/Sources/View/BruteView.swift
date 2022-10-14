@@ -54,9 +54,18 @@ class BruteView: UIView {
     
     static var activityIndicator = UIActivityIndicatorView(style: .medium)
 
+    var isBlack: Bool = false {
+        didSet {
+            if isBlack {
+                backgroundColor = .systemCyan
+            } else {
+                backgroundColor = .systemYellow
+            }
+        }
+    }
     
     @objc private func buttonPressed() {
-        
+        isBlack.toggle()
     }
     
     @objc private func passwordButtonPressed() {
