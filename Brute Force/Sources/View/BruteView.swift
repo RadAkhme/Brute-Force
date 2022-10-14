@@ -85,11 +85,14 @@ class BruteView: UIView {
         }
         
         private func setupHierarchy() {
-            
+            addSubview(textField)
+            addSubview(label)
+            addSubview(passwordButton)
+            addSubview(button)
         }
         
         private func setupStackView() {
-        
+           
         }
 
 }
