@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class BruteView: UIView {
     
@@ -92,7 +93,34 @@ class BruteView: UIView {
         }
         
         private func setupStackView() {
-           
+            textField.snp.makeConstraints { make in
+                make.bottom.equalTo(label.snp.top).offset(-30)
+                make.height.equalTo(40)
+                make.left.equalTo(self).offset(50)
+                make.right.equalTo(self).inset(50)
+            }
+            
+            label.snp.makeConstraints { make in
+                make.centerX.equalTo(self)
+                make.centerY.equalTo(self).offset(-50)
+                
+            }
+            
+            passwordButton.snp.makeConstraints { make in
+                make.centerX.equalTo(self)
+                make.top.equalTo(label.snp.bottom).offset(30)
+                make.height.equalTo(50)
+                make.left.equalTo(self).offset(50)
+                make.right.equalTo(self).inset(50)
+            }
+            
+            button.snp.makeConstraints { make in
+                make.centerX.equalTo(self)
+                make.top.equalTo(passwordButton.snp.bottom).offset(30)
+                make.height.equalTo(50)
+                make.left.equalTo(self).offset(50)
+                make.right.equalTo(self).inset(50)
+            }
         }
 
 }
