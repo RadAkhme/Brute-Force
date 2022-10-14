@@ -8,7 +8,19 @@
 import UIKit
 
 class BruteView: UIView {
-
+    
+    // MARK: - Outlets
+    
+    private lazy var textField: UITextField = {
+            let textField = UITextField()
+            textField.backgroundColor = .white
+            textField.placeholder = "password"
+            textField.textAlignment = .center
+            textField.layer.cornerRadius = 20
+            textField.text = ""
+            return textField
+        }()
+    
     // MARK: - Initial
     
     override init(frame: CGRect) {
