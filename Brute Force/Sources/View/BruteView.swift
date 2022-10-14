@@ -52,6 +52,9 @@ class BruteView: UIView {
         return button
     }()
     
+    static var activityIndicator = UIActivityIndicatorView(style: .medium)
+
+    
     @objc private func buttonPressed() {
         
     }
