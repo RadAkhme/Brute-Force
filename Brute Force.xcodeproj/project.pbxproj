@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		935F5E9E28F9C89B00747242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5E9D28F9C89B00747242 /* AppDelegate.swift */; };
 		935F5EA028F9C89B00747242 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5E9F28F9C89B00747242 /* SceneDelegate.swift */; };
-		935F5EA228F9C89B00747242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EA128F9C89B00747242 /* ViewController.swift */; };
+		935F5EA228F9C89B00747242 /* BruteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EA128F9C89B00747242 /* BruteController.swift */; };
 		935F5EA528F9C89B00747242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F5EA328F9C89B00747242 /* Main.storyboard */; };
 		935F5EA728F9C8A100747242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F5EA628F9C8A100747242 /* Assets.xcassets */; };
 		935F5EAA28F9C8A100747242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F5EA828F9C8A100747242 /* LaunchScreen.storyboard */; };
+		935F5EB928F9CFDC00747242 /* BruteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EB828F9CFDC00747242 /* BruteView.swift */; };
+		935F5EBC28F9D90300747242 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 935F5EBB28F9D90300747242 /* SnapKit */; };
+		935F5EBF28F9DAB300747242 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EBE28F9DAB300747242 /* Extension.swift */; };
+		935F5EC128F9DB5B00747242 /* Brute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F5EC028F9DB5B00747242 /* Brute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		935F5E9A28F9C89B00747242 /* Brute Force.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brute Force.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F5E9D28F9C89B00747242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935F5E9F28F9C89B00747242 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		935F5EA128F9C89B00747242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935F5EA128F9C89B00747242 /* BruteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteController.swift; sourceTree = "<group>"; };
 		935F5EA428F9C89B00747242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		935F5EA628F9C8A100747242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		935F5EA928F9C8A100747242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F5EAB28F9C8A100747242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935F5EB828F9CFDC00747242 /* BruteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteView.swift; sourceTree = "<group>"; };
+		935F5EBE28F9DAB300747242 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		935F5EC028F9DB5B00747242 /* Brute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F5EBC28F9D90300747242 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,82 @@
 		935F5E9C28F9C89B00747242 /* Brute Force */ = {
 			isa = PBXGroup;
 			children = (
-				935F5E9D28F9C89B00747242 /* AppDelegate.swift */,
-				935F5E9F28F9C89B00747242 /* SceneDelegate.swift */,
-				935F5EA128F9C89B00747242 /* ViewController.swift */,
-				935F5EA328F9C89B00747242 /* Main.storyboard */,
-				935F5EA628F9C8A100747242 /* Assets.xcassets */,
+				935F5EB228F9CC7F00747242 /* Resources */,
+				935F5EB128F9CC7700747242 /* Sources */,
 				935F5EA828F9C8A100747242 /* LaunchScreen.storyboard */,
-				935F5EAB28F9C8A100747242 /* Info.plist */,
+				935F5EA328F9C89B00747242 /* Main.storyboard */,
 			);
 			path = "Brute Force";
+			sourceTree = "<group>";
+		};
+		935F5EB128F9CC7700747242 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EBD28F9DA9C00747242 /* Extension */,
+				935F5EB728F9CCB200747242 /* Brute */,
+				935F5EB628F9CCAA00747242 /* View */,
+				935F5EB528F9CC9E00747242 /* Controller */,
+				935F5EB428F9CC9600747242 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		935F5EB228F9CC7F00747242 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EA628F9C8A100747242 /* Assets.xcassets */,
+				935F5EB328F9CC8800747242 /* Configurations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		935F5EB328F9CC8800747242 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EAB28F9C8A100747242 /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		935F5EB428F9CC9600747242 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				935F5E9D28F9C89B00747242 /* AppDelegate.swift */,
+				935F5E9F28F9C89B00747242 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		935F5EB528F9CC9E00747242 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EA128F9C89B00747242 /* BruteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		935F5EB628F9CCAA00747242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EB828F9CFDC00747242 /* BruteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935F5EB728F9CCB200747242 /* Brute */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EC028F9DB5B00747242 /* Brute.swift */,
+			);
+			path = Brute;
+			sourceTree = "<group>";
+		};
+		935F5EBD28F9DA9C00747242 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				935F5EBE28F9DAB300747242 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +158,9 @@
 			dependencies = (
 			);
 			name = "Brute Force";
+			packageProductDependencies = (
+				935F5EBB28F9D90300747242 /* SnapKit */,
+			);
 			productName = "Brute Force";
 			productReference = 935F5E9A28F9C89B00747242 /* Brute Force.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +189,9 @@
 				Base,
 			);
 			mainGroup = 935F5E9128F9C89A00747242;
+			packageReferences = (
+				935F5EBA28F9D90300747242 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 935F5E9B28F9C89B00747242 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F5EA228F9C89B00747242 /* ViewController.swift in Sources */,
+				935F5EC128F9DB5B00747242 /* Brute.swift in Sources */,
+				935F5EBF28F9DAB300747242 /* Extension.swift in Sources */,
+				935F5EA228F9C89B00747242 /* BruteController.swift in Sources */,
 				935F5E9E28F9C89B00747242 /* AppDelegate.swift in Sources */,
 				935F5EA028F9C89B00747242 /* SceneDelegate.swift in Sources */,
+				935F5EB928F9CFDC00747242 /* BruteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +376,9 @@
 				INFOPLIST_FILE = "Brute Force/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +404,9 @@
 				INFOPLIST_FILE = "Brute Force/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		935F5EBA28F9D90300747242 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		935F5EBB28F9D90300747242 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 935F5EBA28F9D90300747242 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 935F5E9228F9C89A00747242 /* Project object */;
 }
