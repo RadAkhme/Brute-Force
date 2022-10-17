@@ -16,8 +16,6 @@ extension String {
     var letters:     String { return lowercase + uppercase }
     var printable:   String { return digits + letters + punctuation }
 
-
-
     mutating func replace(at index: Int, with character: Character) {
         var stringArray = Array(self)
         stringArray[index] = character
@@ -33,10 +31,10 @@ extension UITextField {
         leftView = iconContainerView
         leftViewMode = .always
     }
-
-    func setRightIcon() {
+    
+    func setRightIcon(_ passwordView: BruteView) {
         let iconContainerView: UIView = UIView(frame: CGRect(x: 20, y: 0, width: 30, height: 20))
-        iconContainerView.addSubview(BruteController.activityIndicator)
+        iconContainerView.addSubview(passwordView.activityIndicator)
         rightView = iconContainerView
         rightViewMode = .always
     }
