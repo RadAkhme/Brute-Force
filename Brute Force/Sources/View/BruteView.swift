@@ -103,7 +103,7 @@ class BruteView: UIView {
         
         label.snp.makeConstraints { make in
             make.centerX.equalTo(self)
-            make.centerY.equalTo(self).offset(-50)
+            make.centerY.equalTo(self).offset(-100)
             
         }
         
@@ -117,7 +117,7 @@ class BruteView: UIView {
         
         button.snp.makeConstraints { make in
             make.centerX.equalTo(self)
-            make.top.equalTo(passwordButton.snp.bottom).offset(30)
+            make.top.equalTo(passwordButton.snp.bottom).offset(20)
             make.height.equalTo(50)
             make.left.equalTo(self).offset(50)
             make.right.equalTo(self).inset(50)
